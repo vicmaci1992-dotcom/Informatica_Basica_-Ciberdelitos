@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal educativo sobre estructura de computadores, redes de comunicaciones y aplicación en la investigación forense de ciberdelitos."
+    />
+    <title>Computadores y Redes Forenses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand" aria-label="Ir al inicio">
+          <span class="brand-mark">C</span>
+          <span>Computadores + Redes</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#modulo1">Módulo 1</a>
+          <a href="#modulo2">Módulo 2</a>
+          <a href="#modulo3">Módulo 3</a>
+          <a href="#investigacion-forense">Investigación Forense</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Investigación técnica y digital</span>
+            <h1>Estructura de Computadores y Redes de Comunicaciones</h1>
+            <p class="lead">
+              Fundamentos tecnológicos aplicados a la investigación forense de
+              ciberdelitos
+            </p>
+            <p>
+              Este portal reúne los conceptos esenciales de arquitectura de
+              computadores, redes de comunicaciones y análisis digital con un
+              enfoque académico, técnico y defensivo para la investigación de
+              ciberdelitos.
+            </p>
+            <div class="hero-actions">
+              <a href="#modulo1" class="btn btn-primary">Explorar módulos</a>
+              <a href="#modulo3" class="btn btn-secondary">Aplicación forense</a>
+              <a href="assets/material-forense.pdf" class="btn btn-ghost" download>
+                Descargar material
+              </a>
+            </div>
+            <ul class="hero-stats" aria-label="Indicadores del contenido">
+              <li><strong>3</strong><span>Módulos</span></li>
+              <li><strong>10+</strong><span>Conceptos clave</span></li>
+              <li><strong>1</strong><span>Quiz interactivo</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Ilustración de CPU, redes y análisis digital">
+            <img
+              class="hero-image"
+              src="assets/images/forense-hero.svg"
+              alt="Diagrama de CPU, redes de comunicaciones y análisis forense"
+            />
+            <div class="device-card device-main">
+              <div class="cpu-box">
+                <span>CPU</span>
+              </div>
+              <div class="server-grid">
+                <div class="mini-card">ALU</div>
+                <div class="mini-card">UC</div>
+                <div class="mini-card">Registros</div>
+              </div>
+            </div>
+            <div class="signal signal-one"></div>
+            <div class="signal signal-two"></div>
+            <div class="network-node node-a"></div>
+            <div class="network-node node-b"></div>
+            <div class="network-node node-c"></div>
+            <div class="network-node node-d"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modulo1" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Módulo 1</span>
+            <h2>Arquitectura y estructura de computadores</h2>
+          </div>
+
+          <div class="info-grid three-col">
+            <article class="card">
+              <h3>ALU – Unidad Aritmético-Lógica</h3>
+              <p>
+                Es la unidad responsable de realizar operaciones matemáticas y
+                lógicas, como suma, resta, comparación y evaluaciones booleanas.
+                Su importancia radica en que ejecuta la mayoría de cálculos que
+                requieren los programas y sistemas.
+              </p>
+            </article>
+            <article class="card">
+              <h3>UC – Unidad de Control</h3>
+              <p>
+                Coordina y sincroniza todas las actividades del procesador. Lee
+                instrucciones, interpreta el código y dirige cómo deben
+                ejecutarse cada operación dentro del sistema.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Registros</h3>
+              <p>
+                Son pequeñas áreas de almacenamiento muy rápidas ubicadas dentro
+                del procesador. Almacenan datos temporales, instrucciones en
+                curso y resultados intermedios para agilizar el procesamiento.
+              </p>
+            </article>
+          </div>
+
+          <div class="diagram-panel">
+            <h3>Diagrama de la CPU</h3>
+            <svg viewBox="0 0 760 260" class="cpu-diagram" aria-label="Diagrama CPU con ALU, Unidad de Control y Registros">
+              <defs>
+                <linearGradient id="cpuGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1d4ed8"/>
+                  <stop offset="100%" stop-color="#0f172a"/>
+                </linearGradient>
+              </defs>
+              <rect x="35" y="80" width="150" height="100" rx="18" fill="url(#cpuGrad)" />
+              <text x="110" y="135" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">CPU</text>
+
+              <rect x="250" y="30" width="150" height="80" rx="18" fill="#dbeafe" />
+              <text x="325" y="78" text-anchor="middle" fill="#0f172a" font-size="22" font-weight="700">ALU</text>
+
+              <rect x="250" y="130" width="150" height="80" rx="18" fill="#dbeafe" />
+              <text x="325" y="178" text-anchor="middle" fill="#0f172a" font-size="20" font-weight="700">UC</text>
+
+              <rect x="250" y="230" width="150" height="80" rx="18" fill="#dbeafe" />
+              <text x="325" y="278" text-anchor="middle" fill="#0f172a" font-size="20" font-weight="700">Registros</text>
+
+              <rect x="465" y="90" width="190" height="100" rx="18" fill="#111827" />
+              <text x="560" y="145" text-anchor="middle" fill="#e2e8f0" font-size="20" font-weight="700">Unidad de control</text>
+
+              <line x1="185" y1="130" x2="250" y2="70" stroke="#14b8a6" stroke-width="4" />
+              <line x1="185" y1="130" x2="250" y2="170" stroke="#14b8a6" stroke-width="4" />
+              <line x1="185" y1="130" x2="250" y2="270" stroke="#14b8a6" stroke-width="4" />
+              <line x1="400" y1="70" x2="465" y2="120" stroke="#14b8a6" stroke-width="4" />
+              <line x1="400" y1="170" x2="465" y2="140" stroke="#14b8a6" stroke-width="4" />
+              <line x1="400" y1="270" x2="465" y2="170" stroke="#14b8a6" stroke-width="4" />
+            </svg>
+            <p class="diagram-caption">CPU → ALU + Unidad de Control + Registros</p>
+          </div>
+
+          <div class="instruction-cycle">
+            <h3>Ciclo de instrucción</h3>
+            <div class="cycle-steps" aria-label="Ciclo FETCH DECODE EXECUTE">
+              <div class="step">FETCH</div>
+              <div class="step">DECODE</div>
+              <div class="step">EXECUTE</div>
+              <div class="step">Siguiente instrucción</div>
+            </div>
+            <p>
+              El procesador repite continuamente un ciclo: busca la instrucción,
+              la identifica, la ejecuta y pasa a la siguiente, optimizando la
+              secuencia de trabajo del sistema.
+            </p>
+          </div>
+
+          <div class="memory-section">
+            <h3>Jerarquía de memoria</h3>
+            <div class="memory-pyramid" aria-label="Pirámide de la jerarquía de memoria">
+              <div class="level level-1">Registros</div>
+              <div class="level level-2">Memoria Caché</div>
+              <div class="level level-3">Memoria RAM</div>
+              <div class="level level-4">Almacenamiento secundario</div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Velocidad</th>
+                    <th>Capacidad</th>
+                    <th>Proximidad al procesador</th>
+                    <th>Función</th>
+                    <th>Características</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Registros</td>
+                    <td>Muy alta</td>
+                    <td>Baja</td>
+                    <td>Máxima</td>
+                    <td>Procesamiento inmediato</td>
+                    <td>Muy rápidos, de acceso directo</td>
+                  </tr>
+                  <tr>
+                    <td>Caché</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Muy cercana</td>
+                    <td>Reducir latencia</td>
+                    <td>Temporal y aceleradora</td>
+                  </tr>
+                  <tr>
+                    <td>RAM</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td>Media</td>
+                    <td>Trabajar con datos activos</td>
+                    <td>Volátil, imprescindible para ejecución</td>
+                  </tr>
+                  <tr>
+                    <td>Almacenamiento secundario</td>
+                    <td>Baja</td>
+                    <td>Muy alta</td>
+                    <td>Lejana</td>
+                    <td>Persistencia</td>
+                    <td>Disco, SSD, almacenamiento duradero</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modulo2" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Módulo 2</span>
+            <h2>Fundamentos de redes de comunicaciones</h2>
+          </div>
+
+          <div class="content-grid two-col">
+            <article class="card">
+              <h3>¿Qué es una red?</h3>
+              <p>
+                Una red es un conjunto de dispositivos interconectados que pueden
+                compartir recursos, datos y servicios. Las redes permiten la
+                comunicación entre equipos, servidores, sensores y aplicaciones a
+                nivel local o global.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Conceptos básicos</h3>
+              <p>
+                Los elementos clave son los dispositivos, los medios de
+                transmisión, los protocolos y los datos. En conjunto, permiten la
+                transmisión, la identificación y la interpretación correcta de la
+                información.
+              </p>
+            </article>
+          </div>
+
+          <div class="network-devices">
+            <h3>Componentes de una red</h3>
+            <div class="device-cards">
+              <div class="network-card"><span>Computador</span></div>
+              <div class="network-card"><span>Servidor</span></div>
+              <div class="network-card"><span>Router</span></div>
+              <div class="network-card"><span>Switch</span></div>
+              <div class="network-card"><span>Punto de acceso</span></div>
+              <div class="network-card"><span>Medio de transmisión</span></div>
+              <div class="network-card"><span>Protocolos</span></div>
+            </div>
+          </div>
+
+          <div class="communication-diagram">
+            <h3>Diagrama general de comunicación</h3>
+            <svg viewBox="0 0 880 220" aria-label="Diagrama de comunicación entre dispositivos">
+              <rect x="40" y="80" width="120" height="70" rx="16" fill="#dbeafe" />
+              <text x="100" y="120" text-anchor="middle" font-size="18" fill="#111827">PC A</text>
+
+              <rect x="260" y="80" width="120" height="70" rx="16" fill="#dbeafe" />
+              <text x="320" y="120" text-anchor="middle" font-size="18" fill="#111827">Switch</text>
+
+              <rect x="480" y="80" width="120" height="70" rx="16" fill="#dbeafe" />
+              <text x="540" y="120" text-anchor="middle" font-size="18" fill="#111827">Router</text>
+
+              <rect x="700" y="80" width="120" height="70" rx="16" fill="#dbeafe" />
+              <text x="760" y="120" text-anchor="middle" font-size="18" fill="#111827">PC B</text>
+
+              <path d="M160 115 H260" stroke="#14b8a6" stroke-width="5" fill="none" />
+              <path d="M380 115 H480" stroke="#14b8a6" stroke-width="5" fill="none" />
+              <path d="M600 115 H700" stroke="#14b8a6" stroke-width="5" fill="none" />
+
+              <text x="200" y="100" text-anchor="middle" fill="#0f172a" font-size="16">Paquetes</text>
+              <text x="440" y="100" text-anchor="middle" fill="#0f172a" font-size="16">IP</text>
+              <text x="660" y="100" text-anchor="middle" fill="#0f172a" font-size="16">Datos</text>
+            </svg>
+          </div>
+
+          <div class="ip-mac-box">
+            <h3>Dirección IP y Dirección MAC</h3>
+            <p>
+              <strong>Dirección IP:</strong> dirección lógica utilizada para
+              identificar y comunicar dispositivos en una red.
+            </p>
+            <p>
+              <strong>Dirección MAC:</strong> dirección asociada a una interfaz de
+              red utilizada principalmente para la comunicación dentro de la red
+              local.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Concepto</th>
+                    <th>Tipo</th>
+                    <th>Función</th>
+                    <th>Ejemplo</th>
+                    <th>Ámbito</th>
+                    <th>Características</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IP</td>
+                    <td>Lógica</td>
+                    <td>Direccionar paquetes entre redes</td>
+                    <td>192.168.1.10</td>
+                    <td>Red local / Internet</td>
+                    <td>Puede cambiar según la configuración</td>
+                  </tr>
+                  <tr>
+                    <td>MAC</td>
+                    <td>Física</td>
+                    <td>Identificar interfaz local</td>
+                    <td>00:1A:2B:3C:4D:5E</td>
+                    <td>Red local</td>
+                    <td>Es única en la tarjeta de red</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="note">Ejemplos educativos ficticios para fines didácticos.</p>
+          </div>
+
+          <div class="topologies">
+            <h3>Topologías físicas</h3>
+            <div class="topology-grid">
+              <article class="topology-card">
+                <h4>Estrella</h4>
+                <svg viewBox="0 0 200 180" aria-label="Topología en estrella">
+                  <circle cx="100" cy="90" r="14" fill="#1d4ed8" />
+                  <line x1="100" y1="90" x2="35" y2="35" stroke="#14b8a6" stroke-width="3" />
+                  <line x1="100" y1="90" x2="165" y2="35" stroke="#14b8a6" stroke-width="3" />
+                  <line x1="100" y1="90" x2="35" y2="145" stroke="#14b8a6" stroke-width="3" />
+                  <line x1="100" y1="90" x2="165" y2="145" stroke="#14b8a6" stroke-width="3" />
+                  <circle cx="35" cy="35" r="12" fill="#0f172a" />
+                  <circle cx="165" cy="35" r="12" fill="#0f172a" />
+                  <circle cx="35" cy="145" r="12" fill="#0f172a" />
+                  <circle cx="165" cy="145" r="12" fill="#0f172a" />
+                </svg>
+                <ul>
+                  <li>Funcionamiento: todos los nodos se conectan a un concentrador o switch central.</li>
+                  <li>Ventajas: fácil administración y aislamiento de fallas.</li>
+                  <li>Desventajas: dependencia del nodo central.</li>
+                  <li>Impacto operacional: muy usada en redes empresariales y domésticas.</li>
+                </ul>
+              </article>
+
+              <article class="topology-card">
+                <h4>Anillo</h4>
+                <svg viewBox="0 0 200 180" aria-label="Topología en anillo">
+                  <circle cx="100" cy="90" r="42" fill="none" stroke="#14b8a6" stroke-width="3" />
+                  <circle cx="100" cy="90" r="10" fill="#1d4ed8" />
+                  <circle cx="100" cy="48" r="12" fill="#0f172a" />
+                  <circle cx="147" cy="90" r="12" fill="#0f172a" />
+                  <circle cx="100" cy="132" r="12" fill="#0f172a" />
+                  <circle cx="53" cy="90" r="12" fill="#0f172a" />
+                </svg>
+                <ul>
+                  <li>Funcionamiento: cada dispositivo conecta con dos vecinos formando un ciclo.</li>
+                  <li>Ventajas: orden y flujo secuencial de tráfico.</li>
+                  <li>Desventajas: una falla interrumpe la circulación.</li>
+                  <li>Impacto operacional: menos frecuente hoy; requiere mantenimiento cuidadoso.</li>
+                </ul>
+              </article>
+
+              <article class="topology-card">
+                <h4>Bus</h4>
+                <svg viewBox="0 0 200 180" aria-label="Topología en bus">
+                  <line x1="20" y1="90" x2="180" y2="90" stroke="#14b8a6" stroke-width="4" />
+                  <circle cx="40" cy="90" r="12" fill="#0f172a" />
+                  <circle cx="80" cy="90" r="12" fill="#0f172a" />
+                  <circle cx="120" cy="90" r="12" fill="#0f172a" />
+                  <circle cx="160" cy="90" r="12" fill="#0f172a" />
+                </svg>
+                <ul>
+                  <li>Funcionamiento: todos los dispositivos comparten un mismo medio.</li>
+                  <li>Ventajas: instalación simple y económica.</li>
+                  <li>Desventajas: colisiones y vulnerabilidad ante fallas del medio.</li>
+                  <li>Impacto operacional: útil en escenarios pequeños o antiguos.</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Topología</th>
+                    <th>Funcionamiento</th>
+                    <th>Ventajas</th>
+                    <th>Desventajas</th>
+                    <th>Impacto operacional</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Estrella</td>
+                    <td>Centralizado</td>
+                    <td>Fácil administración</td>
+                    <td>Dependencia del conmutador</td>
+                    <td>Muy conveniente para redes empresariales</td>
+                  </tr>
+                  <tr>
+                    <td>Anillo</td>
+                    <td>Secuencial</td>
+                    <td>Buena organización</td>
+                    <td>Falla de un nodo afecta todo</td>
+                    <td>Muy sensible a interrupciones</td>
+                  </tr>
+                  <tr>
+                    <td>Bus</td>
+                    <td>Compartido</td>
+                    <td>Sencilla y económica</td>
+                    <td>Colisiones y menor escalabilidad</td>
+                    <td>Más limitada en entornos actuales</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modulo3" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Módulo 3</span>
+            <h2>Aplicación en la investigación de ciberdelitos</h2>
+          </div>
+          <div class="card feature-card">
+            <h3>¿Por qué es fundamental la memoria RAM, los registros y el tráfico de red para un investigador?</h3>
+            <p>
+              Durante un análisis forense, la RAM, los registros del procesador y
+              el tráfico de red revelan el estado dinámico del sistema. Estas
+              fuentes permiten reconstruir actos recientes, procesos activos,
+              conexiones e interacciones que no siempre quedan almacenadas de
+              forma persistente.
+            </p>
+          </div>
+
+          <div class="info-grid three-col">
+            <article class="card">
+              <h3>Memoria RAM</h3>
+              <p>
+                Es una fuente de información volátil y extremadamente valiosa,
+                porque puede contener procesos activos, conexiones de red,
+                sesiones, claves temporales, artefactos de memoria y datos que no
+                se conservan en disco.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Registros</h3>
+              <p>
+                Los registros del procesador ayudan a comprender el estado de
+                ejecución del sistema, la secuencia de instrucciones y la
+                actividad técnica que pudo ocurrir en un momento determinado del
+                análisis.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Tráfico de red</h3>
+              <p>
+                El tráfico permite reconstruir comunicaciones, identificar
+                conexiones y patrones, relacionar dispositivos, analizar eventos y
+                comprender flujos de información relevantes para una investigación
+                forense.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="investigacion-forense" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Aplicación a la investigación forense</span>
+            <h2>Hardware, redes y evidencias digitales</h2>
+          </div>
+
+          <div class="forensic-text">
+            <p>
+              La relevancia del hardware y las redes en la extracción y análisis
+              de evidencias digitales radica en que ambos constituyen la capa
+              material y de comunicación donde se producen, transportan y
+              transforman los datos. Un investigador forense debe conocer el
+              contexto tecnológico para preservar la evidencia, diferenciar el
+              contenido volátil del persistente y documentar cada actuación con
+              rigor metodológico.
+            </p>
+          </div>
+
+          <div class="info-grid two-col deductive-grid">
+            <article class="card">
+              <h3>Live Forensics</h3>
+              <p>
+                Es la recolección y análisis de evidencia mientras el sistema está
+                encendido, con especial atención a memoria RAM, procesos activos y
+                conexiones de red.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Información volátil y no volátil</h3>
+              <p>
+                La evidencia volátil puede perderse al apagar el equipo, mientras
+                que la no volátil permanece almacenada en disco o medios de
+                almacenamiento. La diferencia es clave para priorizar la
+                preservación.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Preservación e integridad</h3>
+              <p>
+                La evidencia debe mantenerse intacta y sin alteración, aplicando
+                procedimientos técnicos y documentados para garantizar que el
+                análisis sea confiable.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Cadena de custodia</h3>
+              <p>
+                La documentación y el control del manejo de la evidencia permiten
+                demostrar su origen, manipulación y trazabilidad dentro de un
+                proceso legal o académico.
+              </p>
+            </article>
+          </div>
+
+          <div class="flow-diagram">
+            <h3>Flujo de tratamiento de evidencia</h3>
+            <div class="flow-steps">
+              <div class="flow-box">Equipo informático</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-box">Observación y documentación</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-box">Identificación de información volátil</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-box">Preservación</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-box">Análisis</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-box">Documentación de resultados</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Diagrama interactivo</span>
+            <h2>Relación entre hardware, red, evidencia y análisis</h2>
+          </div>
+
+          <div class="interactive-map" id="hardware-map" aria-label="Diagrama interactivo de flujo tecnológico">
+            <button class="node active" data-info="El hardware comprende equipos, componentes electrónicos y periféricos que constituyen la base del sistema computacional.">
+              Hardware
+            </button>
+            <button class="node" data-info="La CPU ejecuta instrucciones y coordina operaciones mediante la ALU, control y registros.">
+              CPU
+            </button>
+            <button class="node" data-info="Los registros almacenan valores temporales y datos clave durante la ejecución del procesador.">
+              Registros
+            </button>
+            <button class="node" data-info="La RAM almacena datos temporales y procesos activos esenciales para el funcionamiento inmediato del sistema.">
+              RAM
+            </button>
+            <button class="node" data-info="La red permite la comunicación entre equipos mediante protocolos, direcciones y medios de transmisión.">
+              Red
+            </button>
+            <button class="node" data-info="El tráfico de red muestra flujos, conexiones y patrones de comunicación relevantes para la investigación.">
+              Tráfico
+            </button>
+            <button class="node" data-info="La evidencia digital es el conjunto de datos, artefactos y trazas que pueden soportar un análisis técnico.">
+              Evidencia digital
+            </button>
+            <button class="node" data-info="El análisis forense convierte la evidencia en conclusiones sustentadas y documentadas.">
+              Análisis forense
+            </button>
+          </div>
+
+          <div class="node-detail" id="node-detail" aria-live="polite">
+            El hardware comprende equipos, componentes electrónicos y periféricos que constituyen la base del sistema computacional.
+          </div>
+        </div>
+      </section>
+
+      <section id="recursos" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Recursos</span>
+            <h2>Multimedia y material de apoyo</h2>
+          </div>
+
+          <div class="resource-grid">
+            <div class="resource-card">
+              <h3>Video educativo</h3>
+              <div class="video-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/5m6Kf9nQ1ac?si=0nU6ZoYHSEk0P5v-"
+                  title="Video educativo sobre arquitectura de computadores y redes"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <h3>Material de apoyo</h3>
+              <p>
+                Para descargar la guía de estudio, utiliza el botón de descarga o
+                accede a la ruta preparada en assets/material-forense.pdf.
+              </p>
+              <a href="assets/material-forense.pdf" class="btn btn-primary" download>
+                DESCARGAR MATERIAL
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quiz-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Evaluación</span>
+            <h2>Quiz interactivo</h2>
+          </div>
+
+          <div id="quiz" class="quiz-card" aria-live="polite">
+            <div class="question active" data-index="0">
+              <p>1. ¿Qué componente ejecuta operaciones aritméticas y lógicas?</p>
+              <label><input type="radio" name="q0" value="0" /> ALU</label>
+              <label><input type="radio" name="q0" value="1" /> Router</label>
+              <label><input type="radio" name="q0" value="2" /> Caché</label>
+            </div>
+
+            <div class="question" data-index="1">
+              <p>2. ¿Cuál componente coordina la ejecución de instrucciones?</p>
+              <label><input type="radio" name="q1" value="0" /> Unidad de Control</label>
+              <label><input type="radio" name="q1" value="1" /> Registrador de memoria</label>
+              <label><input type="radio" name="q1" value="2" /> Switch</label>
+            </div>
+
+            <div class="question" data-index="2">
+              <p>3. ¿Qué estructura almacena datos temporales de alta velocidad cerca del procesador?</p>
+              <label><input type="radio" name="q2" value="0" /> Caché</label>
+              <label><input type="radio" name="q2" value="1" /> Disco duro</label>
+              <label><input type="radio" name="q2" value="2" /> Cable Ethernet</label>
+            </div>
+
+            <div class="question" data-index="3">
+              <p>4. ¿Qué significa la etapa FETCH en el ciclo de instrucción?</p>
+              <label><input type="radio" name="q3" value="0" /> Buscar la instrucción</label>
+              <label><input type="radio" name="q3" value="1" /> Borrar memoria</label>
+              <label><input type="radio" name="q3" value="2" /> Apagar el equipo</label>
+            </div>
+
+            <div class="question" data-index="4">
+              <p>5. ¿Qué tipo de memoria es volátil y se usa para datos activos?</p>
+              <label><input type="radio" name="q4" value="0" /> RAM</label>
+              <label><input type="radio" name="q4" value="1" /> USB</label>
+              <label><input type="radio" name="q4" value="2" /> SSD</label>
+            </div>
+
+            <div class="question" data-index="5">
+              <p>6. ¿Cuál dirección identifica una interfaz de red dentro de la LAN?</p>
+              <label><input type="radio" name="q5" value="0" /> MAC</label>
+              <label><input type="radio" name="q5" value="1" /> HTTP</label>
+              <label><input type="radio" name="q5" value="2" /> URL</label>
+            </div>
+
+            <div class="question" data-index="6">
+              <p>7. ¿Qué topología conecta todos los nodos a un punto central?</p>
+              <label><input type="radio" name="q6" value="0" /> Estrella</label>
+              <label><input type="radio" name="q6" value="1" /> Anillo</label>
+              <label><input type="radio" name="q6" value="2" /> Bus</label>
+            </div>
+
+            <div class="question" data-index="7">
+              <p>8. ¿Cuál es la función principal de un investigador forense en un caso digital?</p>
+              <label><input type="radio" name="q7" value="0" /> Preservar y analizar evidencias</label>
+              <label><input type="radio" name="q7" value="1" /> Instalar software</label>
+              <label><input type="radio" name="q7" value="2" /> Comprar equipos</label>
+            </div>
+
+            <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+            <div class="quiz-actions">
+              <button id="next-question" class="btn btn-primary" type="button">Siguiente</button>
+              <button id="submit-quiz" class="btn btn-secondary" type="button" hidden>Ver resultado final</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rubric-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Verificación</span>
+            <h2>Verificación de rúbrica</h2>
+          </div>
+          <div class="rubric-list">
+            <h3>Módulo 1</h3>
+            <ul>
+              <li>CPU — Sección Módulo 1, diagrama principal y descripción.</li>
+              <li>ALU — Descripción en Módulo 1.</li>
+              <li>Unidad de Control — Descripción en Módulo 1.</li>
+              <li>Registros — Descripción en Módulo 1 y diagrama de CPU.</li>
+              <li>Fetch — Ciclo de instrucción.</li>
+              <li>Decode — Ciclo de instrucción.</li>
+              <li>Execute — Ciclo de instrucción.</li>
+              <li>Jerarquía de memoria — Sección de memoria y pirámide.</li>
+              <li>Caché — Tabla comparativa de jerarquía.</li>
+              <li>RAM — Tablas y explicaciones.</li>
+              <li>Almacenamiento secundario — Tabla comparativa.</li>
+            </ul>
+
+            <h3>Módulo 2</h3>
+            <ul>
+              <li>Conceptos básicos de redes — Sección Módulo 2.</li>
+              <li>Componentes — Tarjetas de dispositivos red.</li>
+              <li>Importancia — Explicación general del módulo.</li>
+              <li>Dirección IP — Sección y tabla comparativa.</li>
+              <li>Dirección MAC — Sección y tabla comparativa.</li>
+              <li>Diferencias IP/MAC — Tabla comparativa.</li>
+              <li>Topología Estrella — Diagrama y descripción.</li>
+              <li>Topología Anillo — Diagrama y descripción.</li>
+              <li>Topología Bus — Diagrama y descripción.</li>
+              <li>Impacto operacional — Detallado en cada topología.</li>
+            </ul>
+
+            <h3>Módulo 3</h3>
+            <ul>
+              <li>Investigación de ciberdelitos — Sección Módulo 3.</li>
+              <li>RAM — Explicación de memoria RAM.</li>
+              <li>Registros — Explicación en análisis forense.</li>
+              <li>Tráfico de red — Explicación en análisis forense.</li>
+              <li>Evidencia digital — Diagrama interactivo y apartado forense.</li>
+            </ul>
+
+            <h3>Aplicación a la Investigación Forense</h3>
+            <ul>
+              <li>Live Forensics — Sección de aplicación forense.</li>
+              <li>Hardware — Diagrama interactivo y textos de contexto.</li>
+              <li>Redes — Módulo 2 y forense.</li>
+              <li>Evidencia volátil — Descripción de información volátil.</li>
+              <li>Evidencia no volátil — Diferencia explicada.</li>
+              <li>Preservación — Sección de preservación e integridad.</li>
+              <li>Integridad — Sección de preservación.</li>
+              <li>Cadena de custodia — Sección descrita.</li>
+              <li>Documentación — Sección de flujo de evidencia y documentación.</li>
+            </ul>
+
+            <h3>Elementos adicionales</h3>
+            <ul>
+              <li>Imágenes — Hero visual y tarjetas con composición visual.</li>
+              <li>Diagramas — CPU, red, topologías, flujo forense.</li>
+              <li>Video — Sección Recursos con iframe de YouTube.</li>
+              <li>Interactividad — Diagrama interactivo, menú responsive y quiz.</li>
+              <li>Quiz — Sección final con puntuación automática.</li>
+              <li>Botón de descarga — Sección Material de apoyo.</li>
+              <li>Botón de contacto — Sección Contacto al final.</li>
+              <li>Responsive — CSS adaptativo para móvil, tablet y escritorio.</li>
+              <li>Diseño profesional — Estilo visual con paleta azul, gris, blanco y acentos tecnológicos.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Portal educativo de divulgación técnica</h3>
+          <p>Estructura de Computadores, Redes e Informática Forense</p>
+        </div>
+        <div>
+          <h4>Enlaces internos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#modulo1">Módulo 1</a></li>
+            <li><a href="#modulo2">Módulo 2</a></li>
+            <li><a href="#modulo3">Módulo 3</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p><a href="tel:0997349631">0997349631</a></p>
+          <a class="btn btn-primary footer-btn" href="tel:0997349631">CONTACTAR</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
