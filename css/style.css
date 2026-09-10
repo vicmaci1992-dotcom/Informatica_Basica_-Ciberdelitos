@@ -156,7 +156,7 @@ input {
 
 .lead {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
-  color: #dbeafe;
+  color: var(--navy-800);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -219,8 +219,8 @@ input {
 
 .hero-stats li {
   min-width: 120px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.1);
   border-radius: 18px;
   padding: 0.8rem 1rem;
 }
@@ -228,7 +228,7 @@ input {
 .hero-stats strong {
   display: block;
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--navy-900);
 }
 
 .hero-stats span {
@@ -256,8 +256,8 @@ input {
 .device-card {
   position: relative;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(148, 163, 184, 0.2), rgba(15, 23, 42, 0.4));
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(238, 246, 255, 0.92));
+  border: 1px solid rgba(37, 99, 235, 0.16);
   border-radius: 32px;
   box-shadow: var(--shadow);
 }
@@ -524,7 +524,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   min-width: 700px;
-  background: rgba(9, 18, 27, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 18px;
   overflow: hidden;
 }
@@ -690,7 +690,7 @@ tbody tr:nth-child(even) {
 
 .quiz-card {
   padding: 1.8rem;
-  background: linear-gradient(180deg, rgba(17, 31, 47, 0.98), rgba(13, 25, 37, 0.98));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(246, 239, 231, 0.94));
 }
 
 .question {
@@ -904,9 +904,9 @@ tbody tr:nth-child(even) {
     right: 0;
     display: none;
     flex-direction: column;
-    background: rgba(7, 24, 39, 0.96);
+    background: rgba(255, 255, 255, 0.97);
     padding: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.1);
   }
 
   .site-header.nav-open .site-nav {
