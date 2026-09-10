@@ -43,6 +43,23 @@ p, li, td, th {
   color: #dfeaf8;
 }
 
+main p,
+main li,
+main td,
+main th,
+main .card,
+main .topology-card,
+main .resource-card,
+main .diagram-panel,
+main .instruction-cycle,
+main .memory-section,
+main .ip-mac-box,
+main .communication-diagram,
+main .topologies,
+main .flow-diagram {
+  color: #e7f1ff;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -341,7 +358,12 @@ input {
   background: linear-gradient(90deg, var(--blue-500), var(--cyan-500));
 }
 
-.info-grid {
+.info-grid,
+.content-grid,
+.resource-grid,
+.device-cards,
+.topology-grid,
+.footer-grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -351,6 +373,13 @@ input {
 }
 
 .two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.content-grid.two-col,
+.resource-grid,
+.topology-grid,
+.footer-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -489,7 +518,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   min-width: 700px;
-  background: #fff;
+  background: rgba(9, 18, 27, 0.9);
   border-radius: 18px;
   overflow: hidden;
 }
@@ -503,7 +532,7 @@ th, td {
 }
 
 th {
-  background: rgba(110, 181, 255, 0.1);
+  background: rgba(110, 181, 255, 0.14);
   color: #ebf4ff;
 }
 
@@ -607,6 +636,7 @@ tbody tr:nth-child(even) {
 }
 
 .single-resource {
+  grid-template-columns: 1fr;
   grid-template-columns: 1fr;
   max-width: 760px;
   margin: 0 auto;
@@ -725,7 +755,7 @@ tbody tr:nth-child(even) {
 }
 
 .site-footer {
-  background: var(--navy-900);
+  background: linear-gradient(180deg, #081926, #0d1d2c);
   color: #dfeaf8;
   padding-top: 3rem;
 }
