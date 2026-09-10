@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Redes y conectividad</title>
+  <desc id="desc">Diagrama técnico de nodos conectados en una red.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="360" rx="28" fill="url(#bg)"/>
+  <g fill="#dbeafe" font-family="Arial, sans-serif" font-weight="700">
+    <rect x="50" y="145" width="120" height="70" rx="18" fill="#dbeafe"/>
+    <text x="110" y="187" text-anchor="middle" fill="#0f172a" font-size="24">PC</text>
+    <rect x="210" y="90" width="120" height="70" rx="18" fill="#dbeafe"/>
+    <text x="270" y="132" text-anchor="middle" fill="#0f172a" font-size="22">Switch</text>
+    <rect x="420" y="90" width="120" height="70" rx="18" fill="#dbeafe"/>
+    <text x="480" y="132" text-anchor="middle" fill="#0f172a" font-size="22">Router</text>
+    <rect x="590" y="145" width="120" height="70" rx="18" fill="#dbeafe"/>
+    <text x="650" y="187" text-anchor="middle" fill="#0f172a" font-size="22">Servidor</text>
+  </g>
+  <g stroke="url(#node)" stroke-width="5" fill="none">
+    <path d="M170 180 H210"/>
+    <path d="M330 125 H420"/>
+    <path d="M540 125 H590"/>
+  </g>
+  <g fill="url(#node)">
+    <circle cx="110" cy="120" r="10"/>
+    <circle cx="270" cy="260" r="10"/>
+    <circle cx="480" cy="260" r="10"/>
+    <circle cx="650" cy="110" r="10"/>
+  </g>
+  <g stroke="#2dd4bf" stroke-width="4" fill="none">
+    <path d="M110 120 L270 260 L480 260 L650 110" opacity="0.8"/>
+  </g>
+</svg>

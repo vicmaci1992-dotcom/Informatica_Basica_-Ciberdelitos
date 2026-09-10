@@ -1,19 +1,22 @@
 :root {
-  --bg: #f4f7fb;
-  --surface: #ffffff;
-  --surface-alt: #eaf2ff;
-  --navy-900: #071827;
-  --navy-800: #0d1d30;
-  --navy-700: #112a43;
-  --blue-600: #2563eb;
-  --blue-500: #3b82f6;
-  --cyan-500: #14b8a6;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-400: #94a3b8;
-  --gray-700: #334155;
-  --text: #0f172a;
-  --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  --bg: #07131d;
+  --bg-soft: #0d1d2c;
+  --bg-panel: #101f31;
+  --surface: #111f2f;
+  --surface-soft: #162b40;
+  --surface-alt: #0b1724;
+  --navy-900: #edf4ff;
+  --navy-800: #dfeaf8;
+  --navy-700: #cfe0f7;
+  --blue-600: #6eb5ff;
+  --blue-500: #7ab6ff;
+  --cyan-500: #49d6c3;
+  --gray-100: #eff6ff;
+  --gray-200: #dbeafe;
+  --gray-400: #93c5fd;
+  --gray-700: #dfeaf8;
+  --text: #e7f1ff;
+  --shadow: 0 18px 40px rgba(2, 6, 23, 0.5);
   --radius: 22px;
 }
 
@@ -28,7 +31,10 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(20, 184, 166, 0.12), transparent 25%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
@@ -60,20 +66,25 @@ input {
 }
 
 .alt-bg {
-  background: linear-gradient(180deg, rgba(14, 116, 144, 0.03), rgba(37, 99, 235, 0.04));
+  background: linear-gradient(180deg, rgba(8, 18, 31, 0.9), rgba(15, 30, 48, 0.9));
+}
+
+.dark-panel {
+  background: linear-gradient(135deg, rgba(6, 15, 24, 0.94), rgba(12, 27, 43, 0.96));
 }
 
 .eyebrow {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--blue-600);
+  background: rgba(110, 181, 255, 0.12);
+  color: #b7d9ff;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(110, 181, 255, 0.28);
 }
 
 .section-heading {
@@ -83,8 +94,9 @@ input {
 .section-heading h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--navy-900);
+  color: #f8fbff;
   line-height: 1.2;
+  text-shadow: 0 0 18px rgba(110, 181, 255, 0.2);
 }
 
 .hero {
@@ -305,10 +317,11 @@ input {
 .topology-card,
 .resource-card,
 .quiz-card {
-  background: var(--surface);
-  border: 1px solid rgba(15, 23, 42, 0.06);
+  background: linear-gradient(180deg, rgba(17, 31, 47, 0.98), rgba(13, 25, 37, 0.98));
+  border: 1px solid rgba(147, 197, 253, 0.18);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  color: var(--text);
 }
 
 .info-grid {
@@ -334,7 +347,7 @@ input {
 .topology-card h4,
 .resource-card h3 {
   margin-top: 0;
-  color: var(--navy-900);
+  color: #f3f7ff;
 }
 
 .diagram-panel,
@@ -353,8 +366,8 @@ input {
 .ip-mac-box,
 .communication-diagram,
 .flow-diagram {
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(15, 23, 42, 0.05);
+  background: linear-gradient(180deg, rgba(13, 25, 37, 0.98), rgba(15, 31, 49, 0.96));
+  border: 1px solid rgba(147, 197, 253, 0.2);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.8rem;
@@ -445,18 +458,19 @@ table {
 
 th, td {
   padding: 0.9rem 1rem;
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(147, 197, 253, 0.16);
   text-align: left;
   vertical-align: top;
+  color: var(--text);
 }
 
 th {
-  background: var(--navy-800);
-  color: #eef2ff;
+  background: rgba(110, 181, 255, 0.1);
+  color: #ebf4ff;
 }
 
 tbody tr:nth-child(even) {
-  background: rgba(148, 163, 184, 0.06);
+  background: rgba(148, 163, 184, 0.05);
 }
 
 .network-devices {
@@ -471,8 +485,8 @@ tbody tr:nth-child(even) {
 }
 
 .network-card {
-  background: linear-gradient(180deg, #eff6ff, #dbeafe);
-  border: 1px solid rgba(37, 99, 235, 0.12);
+  background: linear-gradient(180deg, rgba(190, 219, 254, 0.08), rgba(96, 165, 250, 0.08));
+  border: 1px solid rgba(147, 197, 253, 0.22);
   border-radius: 18px;
   min-height: 110px;
   display: grid;
@@ -480,7 +494,7 @@ tbody tr:nth-child(even) {
   text-align: center;
   font-weight: 700;
   padding: 1rem;
-  color: var(--navy-900);
+  color: #ecf5ff;
 }
 
 .topology-grid {
@@ -493,7 +507,7 @@ tbody tr:nth-child(even) {
 .topology-card ul {
   padding-left: 1.1rem;
   margin-bottom: 0;
-  color: var(--gray-700);
+  color: #dfeaf8;
 }
 
 .interactive-map {
@@ -542,6 +556,26 @@ tbody tr:nth-child(even) {
   gap: 1.5rem;
 }
 
+.image-banner {
+  margin: 1.2rem 0 2rem;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(147, 197, 253, 0.2);
+  box-shadow: var(--shadow);
+}
+
+.image-banner.compact {
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.image-banner img {
+  width: 100%;
+  display: block;
+  min-height: 180px;
+  object-fit: cover;
+}
+
 .video-wrap {
   position: relative;
   width: 100%;
@@ -559,6 +593,7 @@ tbody tr:nth-child(even) {
 
 .quiz-card {
   padding: 1.8rem;
+  background: linear-gradient(180deg, rgba(17, 31, 47, 0.98), rgba(13, 25, 37, 0.98));
 }
 
 .question {
@@ -581,10 +616,11 @@ tbody tr:nth-child(even) {
   align-items: center;
   gap: 0.6rem;
   background: rgba(148, 163, 184, 0.08);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(147, 197, 253, 0.16);
   border-radius: 14px;
   padding: 0.8rem 1rem;
   cursor: pointer;
+  color: var(--text);
 }
 
 .quiz-actions {
