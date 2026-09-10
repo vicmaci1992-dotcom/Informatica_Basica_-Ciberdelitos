@@ -35,7 +35,7 @@ body {
   background:
     radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.18), transparent 24%),
     radial-gradient(circle at 85% 80%, rgba(20, 184, 166, 0.14), transparent 25%),
-    linear-gradient(135deg, #020817 0%, #0b1f36 48%, #062f35 100%);
+    linear-gradient(135deg, #010308 0%, #020817 46%, #0b2452 100%);
   background-attachment: fixed;
   color: var(--text);
   line-height: 1.6;
